@@ -9,11 +9,11 @@ XML::CompactTree - builder of compact tree structures from XML documents
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use base qw(Exporter);
 use vars qw( @EXPORT @EXPORT_OK %EXPORT_TAGS );
@@ -319,8 +319,6 @@ sub _readSubtreeToPerl {
       $reader->read();
     }
   }
-  use Data::Dumper;
-  print Dumper($top);
   return $top;
 }
 
